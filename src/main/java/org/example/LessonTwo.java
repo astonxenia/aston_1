@@ -26,10 +26,16 @@ public class LessonTwo {
             System.out.println("Зеленый");
         }
     }
+    public static void  compareNumbers() {
+        int a = 2;
+        int b = 8;
+        System.out.println(a >= b ? "a >= b" : "a < b");
+    }
 
     public static void main(String [] args) {
         printThreeWords();
         checkSumSign();
         printColor();
+        compareNumbers();
     }
 }
