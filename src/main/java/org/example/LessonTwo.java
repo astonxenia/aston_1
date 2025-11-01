@@ -43,9 +43,13 @@ public class LessonTwo {
     public static boolean returnNegativeNumber(int c) {
         return c < 0;
     }
+    public static void printRepeatedString(String text, int time) {
+        for(int i  =  0; i < time; i++) {
+            System.out.println(text);
+        }
+    }
 
     public static void main(String [] args) {
-        printThreeWords();
         checkSumSign();
         printColor();
         compareNumbers();
@@ -54,11 +58,13 @@ public class LessonTwo {
         int b  = scanner.nextInt();
         boolean result = checkSumRange(a,b);
         System.out.println(result);
-        Scanner sign = new Scanner(System.in);
-        int x = sign.nextInt();
+        int x = scanner.nextInt();
         checkNumberSign(x);
-        Scanner negative = new Scanner(System.in);
-        int c = negative.nextInt();
+        int c = scanner.nextInt();
         System.out.println(returnNegativeNumber(c));
+        scanner.nextLine();
+        String text = scanner.nextLine();
+        int time = scanner.nextInt();
+        printRepeatedString(text, time);
     }
 }
