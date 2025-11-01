@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class LessonTwo {
@@ -51,6 +52,17 @@ public class LessonTwo {
     public static boolean isYearLeap(int year) {
         return ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
     }
+    public static void changeNumbersArray() {
+        int [] arr = {0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1};
+        for(int  i  = 0; i < arr.length; i++) {
+            if (arr[i] == 0) {
+                arr[i] = 1;
+            } else if (arr[i] == 1) {
+                arr[i] = 0;
+            }
+        }
+        System.out.println(Arrays.toString(arr));
+    }
 
     public static void main(String [] args) {
        checkSumSign();
@@ -71,5 +83,6 @@ public class LessonTwo {
         printRepeatedString(text, time);
         int year = scanner.nextInt();
         System.out.println(isYearLeap(year));
+        changeNumbersArray();
     }
 }
