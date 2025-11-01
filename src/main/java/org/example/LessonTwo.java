@@ -37,6 +37,9 @@ public class LessonTwo {
         int sum = a + b;
         return  sum >= 10 && sum <= 20;
     }
+    public static void checkNumberSign(int x) {
+        System.out.println(x < 0 ? "Отрицательное" : "Положительное");
+    }
 
     public static void main(String [] args) {
         printThreeWords();
@@ -48,5 +51,8 @@ public class LessonTwo {
         int b  = scanner.nextInt();
         boolean result = checkSumRange(a,b);
         System.out.println(result);
+        Scanner sign = new Scanner(System.in);
+        int x = sign.nextInt();
+        checkNumberSign(x);
     }
 }
