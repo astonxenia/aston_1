@@ -26,10 +26,4 @@ public class Product {
                     "цена: " + price + "\n" +
                     "состояние бронирование покупателем: " + order);
         }
-
-        public static void main(String[] args) {
-            Product product = new Product("Масло", new Date(), "Россия",
-                    "Беларусь", 250.50, 'N');
-            product.printInfo();
-        }
-    }
+}
