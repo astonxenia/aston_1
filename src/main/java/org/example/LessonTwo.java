@@ -93,6 +93,13 @@ public class LessonTwo {
             System.out.println();
         }
     }
+    public  static void createArrayWithValue(int len, int initialValue) {
+        int [] arr = new int[len];
+        for(int i = 0; i < len; i++) {
+            arr[i] = initialValue;
+        }
+        System.out.println(Arrays.toString(arr));
+    }
 
     public static void main(String [] args) {
         checkSumSign();
@@ -117,5 +124,8 @@ public class LessonTwo {
         createEmptyArray();
         doubleNumbersBelowSix();
         markDiagonalOnes();
+        int len = scanner.nextInt();
+        int initialValue = scanner.nextInt();
+        createArrayWithValue(len,initialValue);
     }
 }
