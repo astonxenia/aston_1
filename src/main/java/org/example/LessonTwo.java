@@ -79,6 +79,20 @@ public class LessonTwo {
         }
         System.out.println(Arrays.toString(arr));
     }
+    public  static void markDiagonalOnes() {
+        int n = 5;
+       int [][] matrix = new int[n][n];
+        for(int i = 0; i < matrix.length; i++) {
+            matrix [i][i] = 1;
+            matrix[i][n - i - 1] = 1;
+        }
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                System.out.print(matrix[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
 
     public static void main(String [] args) {
         checkSumSign();
@@ -102,5 +116,6 @@ public class LessonTwo {
         changeNumbersArray();
         createEmptyArray();
         doubleNumbersBelowSix();
+        markDiagonalOnes();
     }
 }
