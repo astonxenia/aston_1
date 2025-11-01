@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Scanner;
+
 public class LessonTwo {
     public static void printThreeWords() {
         System.out.println("Orange");
@@ -31,11 +33,20 @@ public class LessonTwo {
         int b = 8;
         System.out.println(a >= b ? "a >= b" : "a < b");
     }
+    public static boolean checkSumRange(int a, int b) {
+        int sum = a + b;
+        return  sum >= 10 && sum <= 20;
+    }
 
     public static void main(String [] args) {
         printThreeWords();
         checkSumSign();
         printColor();
         compareNumbers();
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        int b  = scanner.nextInt();
+        boolean result = checkSumRange(a,b);
+        System.out.println(result);
     }
 }
