@@ -105,25 +105,32 @@ public class LessonTwo {
         checkSumSign();
         printColor();
         compareNumbers();
+
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
         int b  = scanner.nextInt();
         boolean result = checkSumRange(a,b);
         System.out.println(result);
+
         int x = scanner.nextInt();
         checkNumberSign(x);
+
         int c = scanner.nextInt();
         System.out.println(returnNegativeNumber(c));
+
         scanner.nextLine();
         String text = scanner.nextLine();
         int time = scanner.nextInt();
         printRepeatedString(text, time);
+
         int year = scanner.nextInt();
         System.out.println(isYearLeap(year));
+
         changeNumbersArray();
         createEmptyArray();
         doubleNumbersBelowSix();
         markDiagonalOnes();
+
         int len = scanner.nextInt();
         int initialValue = scanner.nextInt();
         createArrayWithValue(len,initialValue);
