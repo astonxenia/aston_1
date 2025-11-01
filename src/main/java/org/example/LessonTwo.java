@@ -37,8 +37,11 @@ public class LessonTwo {
         int sum = a + b;
         return  sum >= 10 && sum <= 20;
     }
-    public static void checkNumberSign(int x) {
+    public static void  checkNumberSign(int x) {
         System.out.println(x < 0 ? "Отрицательное" : "Положительное");
+    }
+    public static boolean returnNegativeNumber(int c) {
+        return c < 0;
     }
 
     public static void main(String [] args) {
@@ -54,5 +57,8 @@ public class LessonTwo {
         Scanner sign = new Scanner(System.in);
         int x = sign.nextInt();
         checkNumberSign(x);
+        Scanner negative = new Scanner(System.in);
+        int c = negative.nextInt();
+        System.out.println(returnNegativeNumber(c));
     }
 }
