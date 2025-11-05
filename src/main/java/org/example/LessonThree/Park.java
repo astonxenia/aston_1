@@ -18,9 +18,9 @@ public class Park {
             this.price = price;
         }
         public void printInfo() {
-            System.out.println("Аттракцион" + name);
-            System.out.println("Время работы" + time);
-            System.out.println("Цена" + price);
+            System.out.println("Аттракцион: " + name);
+            System.out.println("Время работы: " + time);
+            System.out.println("Цена: " + price);
         }
     }
 }
