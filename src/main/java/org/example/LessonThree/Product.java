@@ -1,15 +1,13 @@
 package org.example.LessonThree;
 
-import java.util.Date;
-
 public class Product {
         String name;
-        Date data;
+        String data;
         String countryFrom;
         String countryMade;
         double price;
-        char order;
-        public Product(String name, Date data, String countryFrom, String countryMade, double price, char order) {
+        boolean order;
+        public Product(String name, String data, String countryFrom, String countryMade, double price, boolean order) {
             this.name = name;
             this.data = data;
             this.countryFrom = countryFrom;
@@ -19,11 +17,11 @@ public class Product {
         }
 
         public void printInfo() {
-            System.out.println("название: " + name + "\n" +
-                    "дата производства: " + data + "\n" +
-                    "производитель: " + countryFrom + "\n" +
-                    "страна происхождения: " + countryMade + "\n" +
-                    "цена: " + price + "\n" +
+            System.out.println("название: " + name +
+                    "дата производства: " + data +
+                    "производитель: " + countryFrom +
+                    "страна происхождения: " + countryMade +
+                    "цена: " + price +
                     "состояние бронирование покупателем: " + order);
         }
 }
