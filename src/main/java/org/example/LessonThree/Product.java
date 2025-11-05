@@ -7,7 +7,8 @@ public class Product {
         String countryMade;
         double price;
         boolean order;
-        public Product(String name, String data, String countryFrom, String countryMade, double price, boolean order) {
+        public Product(String name, String data, String countryFrom,
+                       String countryMade, double price, boolean order) {
             this.name = name;
             this.data = data;
             this.countryFrom = countryFrom;
@@ -17,11 +18,8 @@ public class Product {
         }
 
         public void printInfo() {
-            System.out.println("название: " + name +
-                    "дата производства: " + data +
-                    "производитель: " + countryFrom +
-                    "страна происхождения: " + countryMade +
-                    "цена: " + price +
-                    "состояние бронирование покупателем: " + order);
+            System.out.println("название: " + name + "дата производства: " + data + "производитель: "
+                    + countryFrom + "страна происхождения: " + countryMade + "цена: "
+                    + price + "состояние бронирование покупателем: " + order);
         }
 }
