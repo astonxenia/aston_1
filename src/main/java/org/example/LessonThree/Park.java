@@ -1,10 +1,15 @@
 package org.example.LessonThree;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Park {
     String name;
+    List<Attraction> attractions;
 
     public Park(String name) {
         this.name = name;
+        this.attractions = new ArrayList<>();
     }
 
     public static class Attraction {
@@ -22,6 +27,10 @@ public class Park {
             System.out.println("Время работы: " + time);
             System.out.println("Цена: " + price);
         }
+    }
+    public void addAttraction(String name, String time, double price)  {
+        Attraction attraction = new Attraction(name, time, price);
+        attractions.add(attraction);
     }
 }
 
