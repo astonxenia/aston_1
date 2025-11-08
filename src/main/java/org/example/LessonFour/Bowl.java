@@ -4,7 +4,11 @@ public class Bowl {
     int foodAmount;
 
     public Bowl(int foodAmount) {
-        this.foodAmount = Math.max(foodAmount, 0);
+        if (foodAmount < 0) {
+            this.foodAmount = 0;
+        } else {
+            this.foodAmount = foodAmount;
+        }
     }
 
     public boolean hasEnoughFood(int amount) {
