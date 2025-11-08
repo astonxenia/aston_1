@@ -4,6 +4,6 @@ public interface Shape {
     double getArea();
     default double getPerimeter() {
         return 0;}
-    String getBorderColour();
     String getFillColour();
+    String getBorderColour();
 }
