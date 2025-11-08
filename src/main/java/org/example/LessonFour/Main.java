@@ -1,7 +1,5 @@
 package org.example.LessonFour;
 
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
         Shape circle = new Circle(10, "Зеленый", "Оранжевый");
