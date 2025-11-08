@@ -3,6 +3,7 @@ package org.example.LessonFour;
 public class Cat extends Animal {
     private final int MAX_RUN_DISTANCE = 200;
     private static int count = 0;
+    boolean isFull = false;
 
     public Cat(String name) {
         super(name);
@@ -25,5 +26,15 @@ public class Cat extends Animal {
 
     public static int getCount() {
         return count;
+    }
+
+    public void eat(Bowl bowl, int amount) {
+        if(bowl.hasEnoughFood(amount)) {
+            bowl.takeAwayFood(amount);
+            isFull = true;
+            System.out.println(name + "сыт");
+        } else {
+            System.out.println("еды не хватило");
+        }
     }
 }
