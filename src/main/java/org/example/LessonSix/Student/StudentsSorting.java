@@ -25,7 +25,7 @@ public class StudentsSorting {
         }
     }
 
-    public void printStudents(int course) {
+    public void printStudents(Set<Student> students, int course) {
         System.out.println("Студенты " + course + " курса: ");
         for(Student s : students) {
             if(s.getCourse() == course) {
