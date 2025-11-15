@@ -14,12 +14,9 @@ public class Main {
         pb.add("Иванов", "678-90-43");
 
         System.out.println("Иванов – Телефоны: " + pb.get("Иванов"));
-        System.out.println("Петров – Телефогы: " + pb.get("Петров"));
+        System.out.println("Петров – Телефоны: " + pb.get("Петров"));
         System.out.println("Сидоров – Телефоны: " + pb.get("Сидоров"));
         System.out.println("Васильев – Телефоны: " + pb.get("Васильев"));
         System.out.println("Лапочкин – Телефоны: " + pb.get("Лапочкин"));
-
-        System.out.println("Весь телефонный справочник: ");
-        pb.printAll();
     }
 }
