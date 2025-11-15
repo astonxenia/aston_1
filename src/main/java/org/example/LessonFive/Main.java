@@ -1,6 +1,7 @@
 package org.example.LessonFive;
 
 public class Main {
+
     public static int myArray(String [][] array) {
         if (array.length != 4) {
             throw new MyArraySizeException("Неверное количество строк, должно быть 4");
@@ -24,5 +25,22 @@ public class Main {
             }
         }
         return sum;
+    }
+
+    public static void main(String[] args){
+        String [][] array = {
+                {"1", "2", "3", "4"},
+                {"5", "6", "7", "8"},
+                {"9", "10", "11", "12"},
+                {"13", "14", "15", "16"},
+        };
+        try {
+            int result = myArray(array);
+            System.out.print("Сумма элементов массива: " + result);
+        } catch (MyArraySizeException e) {
+            System.out.println("Ошибка размера массива: "  + e.getMessage());
+        } catch (MyArrayDataException e) {
+            System.out.println("Ошибка преобразования массива: " + e.getMessage());
+        }
     }
 }
