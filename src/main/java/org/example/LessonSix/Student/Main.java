@@ -24,14 +24,12 @@ public class Main {
         sorting.addStudent(student7);
         sorting.addStudent(student8);
 
-        System.out.println("Все студенты 1 курса: ");
         sorting.printStudents(1);
 
         sorting.deleteLowScoringStudents();
 
         sorting.toNextCourse();
 
-        System.out.println("Переведены на 2-й курс: ");
         sorting.printStudents(2);
     }
 }

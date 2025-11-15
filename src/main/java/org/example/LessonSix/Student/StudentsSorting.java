@@ -26,7 +26,7 @@ public class StudentsSorting {
     }
 
     public void printStudents(int course) {
-        System.out.println("Студенты " + course + " курса");
+        System.out.println("Студенты " + course + " курса: ");
         for(Student s : students) {
             if(s.getCourse() == course) {
                 System.out.println(s.getName());
