@@ -15,4 +15,12 @@ public class PhoneBook {
     public List<String> get(String lastName) {
         return book.getOrDefault(lastName, new ArrayList<>());
     }
+
+    public void printAll() {
+        for(Map.Entry<String, List<String>> entry : book.entrySet()) {
+            String lastName = entry.getKey();
+            List<String> phones = entry.getValue();
+            System.out.println(lastName + ": " + phones);
+        }
+    }
 }
