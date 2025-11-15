@@ -36,11 +36,19 @@ public class Main {
         };
         try {
             int result = myArray(array);
-            System.out.print("Сумма элементов массива: " + result);
+            System.out.println("Сумма элементов массива: " + result);
         } catch (MyArraySizeException e) {
             System.out.println("Ошибка размера массива: "  + e.getMessage());
         } catch (MyArrayDataException e) {
             System.out.println("Ошибка преобразования массива: " + e.getMessage());
+        }
+
+        int [] oneStringArray = {1, 2, 3, 4};
+        try {
+            int val = oneStringArray[4];
+            System.out.println("Число с индексом '4' = " + val);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Исключение ArrayIndexOutOfBoundsException поймано: " + e.getMessage());
         }
     }
 }
