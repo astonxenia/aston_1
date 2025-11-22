@@ -9,6 +9,7 @@ public class TriangleArea {
             throw new IllegalArgumentException("Таких треугольников не существует");
         }
         double p = (sideA + sideB + sideC) / 2.0;
-        return Math.sqrt(p * (p - sideA) * (p - sideB) * (p - sideC));
+        double area = Math.sqrt(p * (p - sideA) * (p - sideB) * (p - sideC));
+        return Math.round(area * 10000.0) / 10000.0;
     }
 }
