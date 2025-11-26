@@ -10,7 +10,7 @@ public class EchoGetTest {
         @Test
         public void testGetRequest() {
             RestAssured
-                    .given()
+                    .given().log().all()
                     .baseUri("https://postman-echo.com")
                     .queryParam("foo1", "bar1")
                     .queryParam("foo2","bar2")

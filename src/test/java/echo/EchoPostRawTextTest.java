@@ -11,7 +11,8 @@ public class EchoPostRawTextTest {
     public void testResponseIsOkAndBodyHasData() {
         String expectedData = "This is expected to be sent back as part of response body.";
 
-        RestAssured.given()
+        RestAssured
+                .given().log().all()
                 .baseUri("https://postman-echo.com")
                 .body(expectedData)
                 .contentType("text/plain")

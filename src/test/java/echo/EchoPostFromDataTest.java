@@ -10,7 +10,7 @@ public class EchoPostFromDataTest {
     @Test
     public void testFromDataIsResponse() {
         RestAssured
-                .given()
+                .given().log().all()
                 .baseUri("https://postman-echo.com")
                 .contentType("application/x-www-form-urlencoded")
                 .formParam("foo1", "bar1")
