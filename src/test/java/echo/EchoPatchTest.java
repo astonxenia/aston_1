@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class EchoPathTest {
+public class EchoPatchTest {
     @Test
     public void testResponseIsOkAndBodyHasData() {
         String expectedBody = "This is expected to be sent back as part of response body.";
