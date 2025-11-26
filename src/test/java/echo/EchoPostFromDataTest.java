@@ -12,7 +12,7 @@ public class EchoPostFromDataTest {
         RestAssured
                 .given().log().all()
                 .baseUri("https://postman-echo.com")
-                .contentType("application/x-www-form-urlencoded")
+                .contentType("application/x-www-form-urlencoded; charset=UTF-8")
                 .formParam("foo1", "bar1")
                 .formParam("foo2","bar2")
                 .when()
